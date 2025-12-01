@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.4.1</Version>
+    <Version>0.0.1</Version>
     <PackageId>NuSealTestPackage</PackageId>
     <Title>NuSealTestPackage</Title>
+    <PackageReleaseNotes>
+      Test author package for NuSeal v0.4.1
+      It uses the default behavior of NuSeal without any customizations.
+    </PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
