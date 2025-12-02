@@ -26,7 +26,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NuSeal" Version="0.4.1" />
+    <PackageReference Include="NuSeal" Version="0.4.2" />
   </ItemGroup>
 
   <ItemGroup>
