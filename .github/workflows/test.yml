@@ -1,0 +1,31 @@
+name: Release All Packages
+
+on: 
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.x
+
+    - name: Build
+      run: dotnet build NuSealTestPackage.slnx --configuration Release
+
+    - name: Pack
+      run: dotnet pack NuSealTestPackage.slnx --configuration Release --no-restore --output .
+
+    - name: List packed files
+      run: ls -al nupkgs
+      
+    - name: List files
+      run: ls -al src/NuSealTestPackage/bin/Release
