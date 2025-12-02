@@ -1,3 +1,10 @@
 <Solution>
+  <Folder Name="/_meta/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".github/workflows/release.yml" />
+    <File Path=".github/workflows/test.yml" />
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="src/NuSealTestPackage/NuSealTestPackage.csproj" />
 </Solution>
