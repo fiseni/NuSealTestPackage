@@ -24,8 +24,8 @@ jobs:
     - name: Pack
       run: dotnet pack NuSealTestPackage.slnx --configuration Release --no-restore --output .
 
-    - name: List packed files
-      run: ls -al nupkgs
+    - name: List root files
+      run: ls -al
       
     - name: List files
       run: ls -al src/NuSealTestPackage/bin/Release
