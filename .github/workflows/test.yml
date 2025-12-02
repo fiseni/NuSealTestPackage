@@ -19,13 +19,16 @@ jobs:
         dotnet-version: 10.x
 
     - name: Build
-      run: dotnet build NuSealTestPackage.slnx --configuration Release
+      run: dotnet build src/NuSealTestPackage/NuSealTestPackage.csproj --configuration Release
 
     - name: Pack
-      run: dotnet pack NuSealTestPackage.slnx --configuration Release --no-restore --output .
+      run: dotnet pack src/NuSealTestPackage/NuSealTestPackage.csproj --configuration Release --no-restore --output .
 
     - name: List root files
       run: ls -al
+
+    - name: List nupkg content
+      run: unzip -l NuSealTestPackage.0.0.2.nupkg
       
     - name: List files
       run: ls -al src/NuSealTestPackage/bin/Release
