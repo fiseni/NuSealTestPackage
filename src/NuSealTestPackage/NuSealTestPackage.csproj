@@ -21,7 +21,7 @@
     <IsPackable>true</IsPackable>
     
     <!--We're using dotnet pack, so we don't need this flag set-->
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
