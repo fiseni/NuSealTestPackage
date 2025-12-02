@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackageId>NuSealTestPackage</PackageId>
     <Title>NuSealTestPackage</Title>
     <PackageReleaseNotes>
