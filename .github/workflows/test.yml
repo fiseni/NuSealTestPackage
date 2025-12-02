@@ -28,7 +28,7 @@ jobs:
       run: ls -al
 
     - name: List nupkg content
-      run: unzip -l NuSealTestPackage.0.0.2.nupkg
+      run: unzip -l NuSealTestPackage.0.0.3.nupkg
       
     - name: List files
       run: ls -al src/NuSealTestPackage/bin/Release
